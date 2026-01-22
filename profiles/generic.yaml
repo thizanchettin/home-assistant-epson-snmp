@@ -1,0 +1,41 @@
+schema_version: 1
+
+profile:
+  id: generic
+  name: Generic SNMP Printer
+  priority: 0
+
+detection:
+  probe:
+    - key: sysObjectID
+      oid: 1.3.6.1.2.1.1.2.0
+      kind: oid
+      required: true
+
+  scoring:
+    threshold: 1
+    rules:
+      - name: always fallback
+        when:
+          key: sysObjectID
+          op: exists
+        score: 1
+
+sources:
+  sys_name:
+    oid: 1.3.6.1.2.1.1.5.0
+    kind: str
+
+  uptime_raw:
+    oid: 1.3.6.1.2.1.1.3.0
+    kind: timeticks
+
+sensors:
+  - key: uptime
+    name_suffix: Uptime
+    source_key: uptime_raw
+    kind: timeticks_seconds
+    device_class: duration
+    state_class: measurement
+    unit: s
+    icon: mdi:clock-outline
