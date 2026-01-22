@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Impressora Epson via SNMP",
+        "description": "Configure uma impressora Epson via SNMP.",
+        "data": {
+          "host": "Host",
+          "name": "Nome",
+          "community": "Comunidade",
+          "version": "Versão SNMP",
+          "scan_interval": "Intervalo de varredura (segundos)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Falha ao conectar",
+      "unknown": "Erro inesperado"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "profile": "Perfil"
+        }
+      }
+    }
+  }
+}
