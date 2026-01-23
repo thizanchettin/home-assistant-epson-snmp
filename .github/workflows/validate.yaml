@@ -16,4 +16,3 @@ jobs:
         uses: hacs/action@main
         with:
           category: integration
-          repository: custom_components/epson_snmp
