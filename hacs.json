@@ -1,6 +1,5 @@
 {
   "name": "Epson Printers (SNMP)",
   "content_in_root": true,
-  "domains": ["epson_snmp"],
   "homeassistant": "2024.6.0"
 }
