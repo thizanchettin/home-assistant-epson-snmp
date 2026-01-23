@@ -1,11 +1,11 @@
 {
   "domain": "epson_snmp",
   "name": "Epson Printers (SNMP)",
-  "version": "0.1.0",
-  "documentation": "https://github.com/thizanchettin/home-assistant-epson-snmp",
-  "issue_tracker": "https://github.com/thizanchettin/home-assistant-epson-snmp/issues",
-  "requirements": ["pysnmp==7.1.22"],
   "codeowners": ["@thizanchettin"],
   "config_flow": true,
-  "iot_class": "local_polling"
+  "documentation": "https://github.com/thizanchettin/home-assistant-epson-snmp",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/thizanchettin/home-assistant-epson-snmp/issues",
+  "requirements": ["pysnmp==7.1.22"],
+  "version": "0.1.2"
 }
