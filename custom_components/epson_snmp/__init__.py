@@ -3,6 +3,7 @@ from __future__ import annotations
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady
+from homeassistant.helpers import config_validation as cv
 
 from .const import (
     CONF_COMMUNITY,
@@ -27,6 +28,7 @@ No network I/O should run directly in the event loop; the coordinator handles
 SNMP polling safely outside the loop.
 """
 
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 PLATFORMS: list[str] = ["sensor"]
 
