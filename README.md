@@ -1,103 +1,10 @@
 <!-- Language selector -->
 <!-- Language selector -->
 <p align="center">
-  <a href="#pt-br">🇧🇷 Português</a> |
-  <a href="#en-us">🇺🇸 English</a>
+  <a href="#en-us">🇺🇸 English</a> | 
+  <a href="#pt-br">🇧🇷 Português</a>
 </p>
 
----
-
-
----
-<a id="pt-br"></a>
-# Epson Printers (SNMP) – Integração para Home Assistant 🇧🇷
-
-Integração customizada do Home Assistant para monitorar **impressoras Epson via SNMP**.
-
-O objetivo é fornecer informações confiáveis da impressora de forma simples, direta e integrada à interface do Home Assistant.
-
----
-
-## ✨ Funcionalidades
-
-- Monitoramento de impressoras Epson via SNMP
-- Detecção automática do modelo compatível
-- Contadores de páginas impressas
-- Monitoramento de níveis de tinta
-- Informações do dispositivo integradas ao Home Assistant
-- Interface totalmente integrada à UI do Home Assistant
-- Suporte a múltiplos idiomas (Português e Inglês)
-
----
-
-## 📊 Informações disponíveis
-
-### Contadores de páginas
-
-A integração expõe dois contadores principais:
-
-- **Total de páginas**  
-  Total de páginas impressas ao longo da vida útil da impressora
-
-- **Páginas desde a última ligação**  
-  Quantidade de páginas impressas desde que a impressora foi ligada pela última vez
-
----
-
-### Níveis de tinta
-
-- Exibição dos níveis de tinta por cartucho
-- Valores percentuais quando disponíveis
-- Estados desconhecidos são tratados corretamente quando a impressora não informa dados válidos
-
----
-
-### Informações do dispositivo
-
-Algumas informações, como **versão de firmware**, modelo e fabricante, são exibidas diretamente nos **detalhes do dispositivo** no Home Assistant, mantendo a interface limpa e sem sensores desnecessários.
-
----
-
-## ⚙️ Configuração
-
-A configuração é feita inteiramente pela interface do Home Assistant:
-
-- Endereço da impressora
-- Nome do dispositivo
-- Comunidade SNMP
-- Versão do protocolo SNMP
-- Intervalo de atualização
-
-Não é necessário editar arquivos manualmente após a instalação.
-
----
-
-## 🖨️ Impressoras compatíveis
-
-| Modelo | Status |
-|------|-------|
-| Epson L3250 | ✅ Suportado |
-
-Outros modelos podem ser adicionados futuramente.
-
----
-
-## 📦 Instalação
-
-### Instalação manual
-
-1. Copie a pasta `epson_snmp` para:
-   ```
-   /config/custom_components/
-   ```
-2. Reinicie o Home Assistant
-3. Adicione a integração pela interface gráfica
-
----
-
-## 📄 Licença
-
-MIT License
 
 ---
 ---
@@ -190,3 +97,96 @@ Additional models may be added in the future.
 ## 📄 License
 
 MIT License
+
+---
+---
+<a id="pt-br"></a>
+# Epson Printers (SNMP) – Integração para Home Assistant 🇧🇷
+
+Integração customizada do Home Assistant para monitorar **impressoras Epson via SNMP**.
+
+O objetivo é fornecer informações confiáveis da impressora de forma simples, direta e integrada à interface do Home Assistant.
+
+---
+
+## ✨ Funcionalidades
+
+- Monitoramento de impressoras Epson via SNMP
+- Detecção automática do modelo compatível
+- Contadores de páginas impressas
+- Monitoramento de níveis de tinta
+- Informações do dispositivo integradas ao Home Assistant
+- Interface totalmente integrada à UI do Home Assistant
+- Suporte a múltiplos idiomas (Português e Inglês)
+
+---
+
+## 📊 Informações disponíveis
+
+### Contadores de páginas
+
+A integração expõe dois contadores principais:
+
+- **Total de páginas**  
+  Total de páginas impressas ao longo da vida útil da impressora
+
+- **Páginas desde a última ligação**  
+  Quantidade de páginas impressas desde que a impressora foi ligada pela última vez
+
+---
+
+### Níveis de tinta
+
+- Exibição dos níveis de tinta por cartucho
+- Valores percentuais quando disponíveis
+- Estados desconhecidos são tratados corretamente quando a impressora não informa dados válidos
+
+---
+
+### Informações do dispositivo
+
+Algumas informações, como **versão de firmware**, modelo e fabricante, são exibidas diretamente nos **detalhes do dispositivo** no Home Assistant, mantendo a interface limpa e sem sensores desnecessários.
+
+---
+
+## ⚙️ Configuração
+
+A configuração é feita inteiramente pela interface do Home Assistant:
+
+- Endereço da impressora
+- Nome do dispositivo
+- Comunidade SNMP
+- Versão do protocolo SNMP
+- Intervalo de atualização
+
+Não é necessário editar arquivos manualmente após a instalação.
+
+---
+
+## 🖨️ Impressoras compatíveis
+
+| Modelo | Status |
+|------|-------|
+| Epson L3250 | ✅ Suportado |
+
+Outros modelos podem ser adicionados futuramente.
+
+---
+
+## 📦 Instalação
+
+### Instalação manual
+
+1. Copie a pasta `epson_snmp` para:
+   ```
+   /config/custom_components/
+   ```
+2. Reinicie o Home Assistant
+3. Adicione a integração pela interface gráfica
+
+---
+
+## 📄 Licença
+
+MIT License
+
